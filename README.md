@@ -9,7 +9,7 @@ Página cartográfica responsiva em **HTML, CSS e JavaScript puros**, sem framew
 
 ## Trocar a imagem do mapa
 
-Edite `assets/world-map.svg` em qualquer editor vetorial/textual, ou coloque sua própria imagem na pasta `assets`. Em `index.html`, atualize a tag `<img id="world-map" ...>` para apontar ao novo arquivo e ajuste `data-fallback` para o caminho local correspondente. **Não há troca da imagem ao selecionar outra camada:** navegação modifica a apresentação visual por CSS, mantendo o mesmo elemento de imagem.
+Edite `assets/world-map.svg` em qualquer editor vetorial/textual, ou coloque sua própria imagem na pasta `assets`. Em `index.html`, atualize a tag `<img id="world-map" ...>` para apontar ao novo arquivo e ajuste `data-fallback` para o caminho local correspondente.
 
 ## Editar textos
 
@@ -20,5 +20,11 @@ Cada camada tem seu próprio conteúdo placeholder no objeto `sections` em `scri
 - `index.html` — estrutura semântica e metadados.
 - `styles.css` — temas, componentes, estados, layout móvel e animações.
 - `script.js` — seleção das camadas, persistência do tema e controles de teclado.
-- `assets/world-map.svg` — mapa vetorial de base editável.
+- `assets/world-map.png` — mapa vetorial de base editável.
 - `manus-routes.json` — rota inicial servida pelo Preview.
+
+
+
+---
+
+Made By Antonella Januário/Beatriz Masschio/Eduardo Augusto/Jhonatan Augusto/Maria Clara Bertellini
