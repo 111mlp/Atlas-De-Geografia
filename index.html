@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071521">
+  <meta name="description" content="Atlas Orbit — uma nova leitura do planeta.">
+  <title>Atlas Orbit — Uma nova leitura do planeta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body data-map-style="overview">
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação do Atlas Orbit">
+      <a class="brand" href="#top" aria-label="Atlas Orbit, início">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-wordmark">atlas<span>orbit</span></span>
+      </a>
+      <div class="sidebar-caption">NAVEGAÇÃO</div>
+      <nav class="style-nav" aria-label="Estilos de mapa">
+        <button class="nav-item is-active" type="button" data-style="overview" aria-current="page">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.4 3.3 5.2 3.3 8.5s-1.1 6.1-3.3 8.5c-2.2-2.4-3.3-5.2-3.3-8.5S9.8 5.9 12 3.5Z"/></svg>
+          </span>
+          <span class="nav-copy"><strong>Visão global</strong><small>Atlas essencial</small></span>
+          <span class="nav-chevron" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" type="button" data-style="terrain">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m3.5 18 5.3-10 3.8 6 2.7-4.5L20.5 18H3.5Z"/><path d="m7.5 18 3.4-5.8 1.7 2.7M15.1 18l.6-1"/></svg>
+          </span>
+          <span class="nav-copy"><strong>Territórios</strong><small>Relevo & fronteiras</small></span>
+          <span class="nav-chevron" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" type="button" data-style="routes">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="6" cy="17" r="2"/><circle cx="18" cy="7" r="2"/><path d="M8 17h2a3 3 0 0 0 3-3v-4a3 3 0 0 1 3-3h.1"/><path d="M15.6 4.7 18 7l-2.4 2.3"/></svg>
+          </span>
+          <span class="nav-copy"><strong>Conexões</strong><small>Rotas & encontros</small></span>
+          <span class="nav-chevron" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" type="button" data-style="signals">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.5"/><path d="M8.1 8.1a5.5 5.5 0 0 0 0 7.8m7.8 0a5.5 5.5 0 0 0 0-7.8M5.3 5.3a9.5 9.5 0 0 0 0 13.4m13.4 0a9.5 9.5 0 0 0 0-13.4"/></svg>
+          </span>
+          <span class="nav-copy"><strong>Sinais</strong><small>Dados em foco</small></span>
+          <span class="nav-chevron" aria-hidden="true">↗</span>
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-status"><span class="status-dot"></span><span>PROJEÇÃO ESTÁVEL</span><span class="status-live">LIVE</span></div>
+        <div class="sidebar-footnote">UMA JANELA PARA O PLANETA<br><span>Nº 001 — EDIÇÃO GLOBAL</span></div>
+      </div>
+    </aside>
+
+    <div class="workspace" id="top">
+      <header class="topbar">
+        <div class="breadcrumb"><span>ATLAS</span><span class="breadcrumb-slash">/</span><strong id="breadcrumb-current">VISÃO GLOBAL</strong></div>
+        <div class="topbar-actions">
+          <div class="sync-label"><span class="status-dot"></span><span>SISTEMA SINCRONIZADO</span></div>
+          <span class="topbar-divider" aria-hidden="true"></span>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo claro" aria-pressed="false">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            <span class="theme-label">Modo claro</span>
+          </button>
+          <button class="profile-chip" type="button" aria-label="Perfil de explorador"><span class="profile-avatar">A</span><span class="profile-name">Explorador</span><span class="profile-caret" aria-hidden="true">⌄</span></button>
+        </div>
+      </header>
+
+      <main id="main-content" class="main-content">
+        <section class="intro-row" aria-labelledby="page-title">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span><span>OBSERVATÓRIO CARTOGRÁFICO <span class="eyebrow-dot">·</span> 06 OUT 2026</span></div>
+            <h1 id="page-title">Uma nova leitura<br class="mobile-break"> do planeta<span class="title-period">.</span></h1>
+            <p class="intro-copy" id="page-description">Um mapa, infinitas perspectivas. Escolha uma camada para começar a explorar.</p>
+          </div>
+          <div class="intro-index"><span>COORDENADAS</span><strong>09° 00′ N</strong><strong>40° 00′ W</strong></div>
+        </section>
+
+        <section class="map-section" aria-label="Visualização do mapa">
+          <div class="map-toolbar">
+            <div class="map-toolbar-title"><span class="toolbar-indicator"></span><span>PROJEÇÃO TERRESTRE</span><span class="toolbar-separator">/</span><strong id="map-style-label">GLOBAL</strong></div>
+            <div class="map-toolbar-meta"><span class="live-indicator"></span><span>AO VIVO</span><span class="toolbar-separator">·</span><span>ESCALA 1:40M</span></div>
+          </div>
+          <div class="map-stage" id="map-stage" role="img" aria-label="Mapa-múndi estilizado com contornos de países">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <div class="stage-orbit orbit-one" aria-hidden="true"></div>
+            <div class="stage-orbit orbit-two" aria-hidden="true"></div>
+            <div class="stage-crosshair crosshair-top" aria-hidden="true"></div>
+            <div class="stage-crosshair crosshair-bottom" aria-hidden="true"></div>
+            <div class="edge-coordinate edge-coordinate-left" aria-hidden="true">64° 08′ 12″ N</div>
+            <div class="edge-coordinate edge-coordinate-right" aria-hidden="true">17° 42′ 06″ E</div>
+            <img id="world-map" class="world-map" src="/manus-storage/async-images/MOArBbdZgo18pXLYhpXYm/image-1.webp" data-fallback="./assets/world-map.png" alt="Contornos dos continentes e divisões geográficas do mapa-múndi" draggable="false">
+            <span class="map-node map-node-one" aria-hidden="true"><i></i><span>SETOR 01</span></span>
+            <span class="map-node map-node-two" aria-hidden="true"><i></i><span>SETOR 04</span></span>
+            <span class="map-node map-node-three" aria-hidden="true"><i></i><span>SETOR 08</span></span>
+            <div class="map-caption"><span class="caption-mark" aria-hidden="true">⌖</span><span>PROJEÇÃO ORBITAL <i>—</i> WGS 84</span></div>
+            <div class="scale-mark" aria-label="Escala gráfica de mil quilômetros"><span>0</span><i></i><span>1.000 KM</span></div>
+            <div class="map-corner-mark corner-tl" aria-hidden="true"></div><div class="map-corner-mark corner-tr" aria-hidden="true"></div>
+            <div class="map-corner-mark corner-bl" aria-hidden="true"></div><div class="map-corner-mark corner-br" aria-hidden="true"></div>
+          </div>
+          <div class="map-footer"><span><span class="footer-cross">+</span> <span id="map-footer-caption">VISUALIZAÇÃO GLOBAL</span></span><span><kbd>SCROLL</kbd> PARA EXPLORAR <span class="footer-arrow">↓</span></span></div>
+        </section>
+
+        <section class="content-grid" aria-live="polite" aria-atomic="true">
+          <article class="section-copy" id="section-copy">
+            <div class="section-kicker"><span id="section-number">01</span><span class="kicker-rule"></span><span id="section-kicker-text">CAMADA PRINCIPAL</span></div>
+            <div class="section-heading-row"><h2 id="section-title">O mundo, em perspectiva.</h2><span class="section-heading-index" id="section-heading-index">[ 01 — 04 ]</span></div>
+            <p id="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo nec arcu feugiat tristique. Aenean at sapien sed erat consequat ultricies, et posuere metus viverra.</p>
+            <a class="text-link" href="#explore" id="explore-link"><span id="explore-label">Explorar esta camada</span><span class="link-arrow" aria-hidden="true">↗</span></a>
+          </article>
+          <aside class="data-card" aria-label="Informação da projeção">
+            <div class="data-card-top"><span class="data-card-icon" aria-hidden="true">◌</span><span>NOTA DE CAMPO <span class="data-card-index">/ 0<span id="note-number">1</span></span></span><span class="card-more" aria-hidden="true">···</span></div>
+            <div class="data-card-body"><span class="data-overline" id="data-overline">REGISTRO CARTOGRÁFICO</span><strong id="data-title">Perspectiva<br>em movimento</strong><p id="data-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descubra o que muda quando mudamos o ponto de vista.</p></div>
+            <div class="data-card-bottom"><span class="data-chip"><span class="status-dot"></span><span id="data-chip-label">CAMADA ATIVA</span></span><span class="data-arrow" aria-hidden="true">↗</span></div>
+          </aside>
+        </section>
+
+        <footer class="page-footer"><span>© 2026 ATLAS ORBIT <span class="footer-separator">/</span> MAPAS PARA PENSAR DIFERENTE</span><span>FEITO PARA <span class="footer-heart">O</span> PLANETA</span></footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
