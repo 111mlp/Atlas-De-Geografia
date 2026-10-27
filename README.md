@@ -27,4 +27,10 @@ Cada camada tem seu próprio conteúdo placeholder no objeto `sections` em `scri
 
 ---
 
-Made By Antonella Januário/Beatriz Masschio/Eduardo Augusto/Jhonatan Augusto/Maria Clara Bertellini
+Desenvolvido por:<BR> 
+- Antonella Januário<BR>
+- Beatriz Masschio<BR>
+- Eduardo Augusto<BR>
+- Jhonatan Augusto<BR>
+- Maria Clara Bertellini<br>
+- Vitória Vasconcelos
