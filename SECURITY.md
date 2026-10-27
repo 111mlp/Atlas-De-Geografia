@@ -1,5 +1,7 @@
 # Informações legais
 
+Copyright© Jhonatan Augusto
+<br><br>
 É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, fundir, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e para permitir que as pessoas a quem o Software for fornecido o façam, sujeitas às seguintes condições: 
 <br><br>
 O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software. 
