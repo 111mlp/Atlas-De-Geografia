@@ -25,7 +25,7 @@ Cada camada tem seu próprio conteúdo placeholder no objeto `sections` em `scri
 
 
 
----
+## Desenvolvedores
 
 Desenvolvido por:<BR> 
 - Antonella Januário<BR>
