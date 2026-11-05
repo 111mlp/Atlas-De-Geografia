@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071521">
+  <meta name="description" content="Atlas Coletivo — uma leitura em camadas de sociedades, territórios e relações mundiais.">
+  <title>Atlas Coletivo — uma nova leitura do mundo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>try{const t=localStorage.getItem('atlas-coletivo-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação do Atlas Coletivo">
+      <a class="brand" href="#inicio" aria-label="Atlas Coletivo, início"><span class="brand-mark" aria-hidden="true"><span></span></span><span class="brand-wordmark">atlas<span>coletivo</span></span></a>
+      <div class="sidebar-caption">EXPLORAR TEMAS</div>
+      <nav class="style-nav" id="topic-nav" aria-label="Atlas por tema"></nav>
+      <div class="sidebar-separator"></div>
+      <div class="sidebar-caption">VOZES & FONTES</div>
+      <nav class="extra-nav" aria-label="Participantes e bibliografia">
+        <button class="nav-item extra-item" data-view="students" type="button"><span class="extra-icon">◉</span><span class="nav-copy"><strong>Estudantes</strong><small>21 vozes</small></span><span class="nav-chevron">↗</span></button>
+        <button class="nav-item extra-item" data-view="references" type="button"><span class="extra-icon">≡</span><span class="nav-copy"><strong>Referências</strong><small>Fontes consultadas</small></span><span class="nav-chevron">↗</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="sidebar-status"><span class="status-dot"></span><span>ATLAS EM EXPLORAÇÃO</span><span class="status-live">2026</span></div><div class="sidebar-footnote">UMA JANELA PARA O MUNDO<br><span>5 PESQUISAS · 21 ESTUDANTES</span></div></div>
+    </aside>
+    <div class="workspace" id="inicio">
+      <header class="topbar">
+        <div class="breadcrumb"><span>ATLAS COLETIVO</span><span class="breadcrumb-slash">/</span><strong id="breadcrumb-current">VISÃO GERAL</strong></div>
+        <div class="topbar-actions"><div class="sync-label"><span class="status-dot"></span><span>TAUBATÉ, SP · 2026</span></div><span class="topbar-divider" aria-hidden="true"></span>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo claro" aria-pressed="false"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><span class="theme-label">Modo claro</span></button>
+          <span class="profile-chip"><span class="profile-avatar">A</span><span class="profile-name">Caderno 01—05</span></span>
+        </div>
+      </header>
+      <main id="main-content" class="main-content">
+        <section class="intro-row" aria-labelledby="page-title"><div><div class="eyebrow"><span class="eyebrow-line"></span><span>OBSERVATÓRIO COLETIVO <span class="eyebrow-dot">·</span> CINCO INVESTIGAÇÕES</span></div><h1 id="page-title">Uma nova leitura<br class="mobile-break"> do mundo<span class="title-period">.</span></h1><p class="intro-copy" id="page-description">Escolha uma camada. Encontre as relações que desenham o nosso mundo.</p></div><div class="intro-index"><span>EDIÇÃO</span><strong>TAUBATÉ · SP</strong><strong>2026</strong></div></section>
+        <section class="map-section" aria-label="Tema em destaque">
+          <div class="map-toolbar"><div class="map-toolbar-title"><span class="toolbar-indicator"></span><span>ATLAS TEMÁTICO</span><span class="toolbar-separator">/</span><strong id="map-style-label">CONEXÕES</strong></div><div class="map-toolbar-meta"><span class="live-indicator"></span><span id="active-number">CADERNO 01 / 05</span></div></div>
+          <div class="map-stage" id="map-stage"><div class="stage-grid" aria-hidden="true"></div><div class="stage-orbit orbit-one" aria-hidden="true"></div><div class="stage-orbit orbit-two" aria-hidden="true"></div><div class="stage-crosshair crosshair-top" aria-hidden="true"></div><div class="stage-crosshair crosshair-bottom" aria-hidden="true"></div><div class="edge-coordinate edge-coordinate-left" aria-hidden="true">TAUBATÉ · 23°01′ S</div><div class="edge-coordinate edge-coordinate-right" aria-hidden="true">LEITURA EM CAMADAS</div>
+            <img id="world-map" class="world-map" src="assets/world-map.png" alt="Mapa-múndi em linhas luminosas, arte visual da interface de referência" draggable="false"><span class="map-node map-node-one" aria-hidden="true"><i></i><span>POLÍTICA</span></span><span class="map-node map-node-two" aria-hidden="true"><i></i><span>SOCIEDADE</span></span><span class="map-node map-node-three" aria-hidden="true"><i></i><span>TERRITÓRIO</span></span><div class="map-caption"><span class="caption-mark" aria-hidden="true">⌖</span><span>UM PLANETA <i>—</i> MUITAS PERSPECTIVAS</span></div><div class="scale-mark"><span>05</span><i></i><span>ATLAS</span></div>
+            <div class="map-corner-mark corner-tl" aria-hidden="true"></div><div class="map-corner-mark corner-tr" aria-hidden="true"></div><div class="map-corner-mark corner-bl" aria-hidden="true"></div><div class="map-corner-mark corner-br" aria-hidden="true"></div><div class="map-overlay-copy"><span class="overlay-kicker" id="map-kicker">CADERNO 01 · CONEXÕES</span><h2 id="map-title">Organizações internacionais</h2><p id="map-subtitle">Como os países negociam desafios que ultrapassam fronteiras.</p><button class="open-reader" id="open-reader" type="button">Explorar este atlas <span>↗</span></button></div>
+          </div><div class="map-footer"><span><span class="footer-cross">+</span> <span id="map-footer-caption">CINCO TEMAS, UMA LEITURA COLETIVA</span></span><span><kbd>ALT + ↑ ↓</kbd> TROCAR TEMA</span></div>
+        </section>
+        <section class="content-grid" aria-live="polite" aria-atomic="true"><article class="section-copy" id="section-copy"><div class="section-kicker"><span id="section-number">01</span><span class="kicker-rule"></span><span id="section-kicker-text">EM FOCO</span></div><div class="section-heading-row"><h2 id="section-title">Instituições em diálogo.</h2><span class="section-heading-index" id="section-heading-index">[ 01 — 05 ]</span></div><p id="section-description">Organismos internacionais ajudam países a negociar problemas comuns — da paz e saúde às regras do comércio e aos acordos regionais.</p><button class="text-link" id="read-more" type="button"><span>Conhecer a pesquisa completa</span><span class="link-arrow" aria-hidden="true">↗</span></button></article>
+          <aside class="data-card" aria-label="Nota de campo"><div class="data-card-top"><span class="data-card-icon" aria-hidden="true">◌</span><span>NOTA DE CAMPO <span class="data-card-index">/ 0<span id="note-number">1</span></span></span><span class="card-more" aria-hidden="true">···</span></div><div class="data-card-body"><span class="data-overline" id="data-overline">NO DOCUMENTO</span><strong id="data-title">Um atlas coletivo</strong><p id="data-description">Cinco grupos investigam organizações, ideias, disputas e desigualdades em diferentes escalas.</p></div><div class="data-card-bottom"><span class="data-chip"><span class="status-dot"></span><span id="data-chip-label">21 ESTUDANTES · 5 ATLAS</span></span><span class="data-arrow" aria-hidden="true">↗</span></div></aside>
+        </section>
+        <footer class="page-footer"><span>ATLAS COLETIVO <span class="footer-separator">/</span> TAUBATÉ, SP · 2026</span><span>FEITO DE PERGUNTAS, DADOS E PERSPECTIVAS</span></footer>
+      </main>
+    </div>
+  </div>
+  <dialog id="reader" aria-labelledby="reader-title"><header class="reader-bar"><button class="reader-back" id="reader-close" type="button"><span>←</span> VOLTAR AO ATLAS</button><span class="reader-label" id="reader-label">CADERNO 01 / 05</span><button class="reader-theme" id="reader-theme" type="button" aria-label="Alternar modo claro ou escuro">◐</button></header><div class="reader-scroll"><article id="reader-content" class="reader-content"></article></div></dialog>
+</body>
+</html>
