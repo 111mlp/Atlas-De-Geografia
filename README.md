@@ -28,9 +28,13 @@ Cada camada tem seu próprio conteúdo placeholder no objeto `sections` em `scri
 ## Desenvolvedores
 
 Desenvolvido por:<BR> 
+- Ana Beatriz Rossi<br>
 - Antonella Januário<BR>
 - Beatriz Masschio<BR>
 - Eduardo Augusto<BR>
 - Jhonatan Augusto<BR>
+- Klara Guimarães<br>
+- Lorena Andrade<BR>
 - Maria Clara Bertellini<br>
+- Mayana Cruz<BR>
 - Vitória Vasconcelos
